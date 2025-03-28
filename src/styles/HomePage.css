@@ -1,0 +1,150 @@
+/* Container chính */
+.homepage-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sidebar mặc định */
+  .sidebar {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Khi sidebar mở */
+  .sidebar.open {
+    width: 280px;
+  }
+  
+  /* Khi sidebar đóng */
+  .sidebar.closed {
+    width: 80px;
+    align-items: center;
+  }
+  
+  /* Tiêu đề */
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer; /* Hiện bàn tay khi rê chuột */
+    transition: 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  
+  /* Khi sidebar đóng chỉ hiển thị icon */
+  .sidebar.closed .menu-item {
+    justify-content: center;
+  }
+  
+  .sidebar.closed .menu-item svg {
+    font-size: 24px;
+  }
+  
+  /* Nút đăng xuất */
+  .logout-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .sidebar.closed .logout-btn {
+    justify-content: center;
+  }
+  
+  /* Nút toggle */
+  .toggle-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: #007bff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.closed .toggle-btn {
+    transform: rotate(180deg);
+  }
+  
+  .report-dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 100;
+  }
+  
+  .dropdown-content .menu-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content .menu-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submenu-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .submenu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .submenu-item:hover {
+    background: #f0f0f0;
+  }
+  

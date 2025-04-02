@@ -1,0 +1,60 @@
+.dashboard-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+  width: 95%;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+  font-style: italic;
+}
+
+.best-sellers-container {
+  width: 95%;
+  padding: 20px;
+}
+
+.best-sellers-container h2 {
+  text-align: center;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+}
+
+.stock-alerts-container {
+  margin: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.critical {
+  background-color: #ffcccc;
+}
+
+tr.warning {
+  background-color: #fff3cd;
+}

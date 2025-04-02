@@ -1,0 +1,24 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.inventory-list {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.add-product {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
